@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club checker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <script type="py" src="main.py" ></script>
+    <style>
+        header {
+            font-size:40px;
+        }
+
+        body {
+            background-color:#6231a6
+        }
+        .resultdiv {
+
+            background-color: green;
+            display: none;
+        
+        }
+
+        .formdiv {
+            margin: auto;
+            background-color:lavender
+        }
+
+        * {
+            font-style: Helvetica
+        }
+    </style>
+</head>
+<body>
+    <header class="header1">Name Verification System</header>
+    <div class="formdiv">
+        <form action="">
+            <label for="firstname">Firstname</label>
+            <br>
+            <input type="label" id="firstname" placeholder="Jericho">
+            <br>
+            <label for="lastname">Lastname</label>
+            <br>
+            <input type="label" id="lastname" placeholder="Magsalin">
+            <br>
+            <button type="button" py-click="clubcheck">Check Member</button>
+        </form>
+    </div>
+   
+    <p id="output"></p>
+    
+</body>
+</html>
