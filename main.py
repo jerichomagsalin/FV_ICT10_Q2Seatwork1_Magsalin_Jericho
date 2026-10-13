@@ -9,8 +9,4 @@ def clubcheck (e):
     lname = document.getElementById('lastname').value
 
     check = "Jericho" in document.getElementById('firstname').value
-    if check == True:
-        display("Welcome Fellow Member", target="output")
-    else:
-        display("No membership", target="output")
-
+    display(check)
